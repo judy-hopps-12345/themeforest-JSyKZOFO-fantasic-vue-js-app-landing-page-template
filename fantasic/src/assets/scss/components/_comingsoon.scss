@@ -1,0 +1,119 @@
+/*----- coming soon style start -----*/
+.coming-soon-logo {
+    margin-bottom: 40px;
+    // responsive
+    @media #{$sm-device}{
+        margin-bottom: 20px;
+    }
+}
+.coming-soon {
+    &-wrapper {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &-inner {
+        max-width: 600px;
+        margin: auto;
+    }
+    &-content {
+        .heading-h3 {
+            font-weight: 600;
+            font-size: 45px;
+            // responsive
+            @media #{$sm-device}{
+                font-size: 32px;
+            }
+            @media #{$xxs-device}{
+                font-size: 26px;
+            }
+        }
+    }
+}
+.form-desc {
+    font-size: 18px;
+    line-height: 1.4;
+    padding-top: 15px;
+}
+.maintanence-form {
+    position: relative;
+    .sub-form {
+        width: 100%;
+        font-size: 18px;
+        line-height: 1;
+        padding: 15px 145px 15px 15px;
+        // ewsponsive
+        @media #{$xxs-device}{
+            padding: 15px 125px 15px 15px;
+        }
+    }
+    .subscribe-btn {
+        top: 0;
+        right: 0;
+        padding: 0 30px;
+        line-height: 1;
+        height: 100%;
+        font-size: 16px;
+        color: $white;
+        background-color: $theme-color;
+        position: absolute;
+        // ewsponsive
+        @media #{$xxs-device}{
+            padding: 0 20px;
+        }
+    }
+}
+.box-timer {
+    padding: 50px 15px;
+    // responsive
+    @media #{$sm-device}{
+        padding: 35px 15px;
+    }
+    span {
+        display: flex;
+        justify-content: center;
+    }
+    .single-count {
+        margin-right: 20px;
+        // responsive
+        @media #{$xxs-device}{
+            margin-right: 10px;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+        .count-timer {
+            width: 110px;
+            height: 110px;
+            line-height: 110px;
+            font-size: 36px;
+            color: $black-soft;
+            font-weight: 600;
+            padding: 5px;
+            border-radius: 5px;
+            background-color: $white;
+            // responsive
+            @media #{$sm-device}{
+                width: 80px;
+                height: 80px;
+                line-height: 80px;
+            }
+            @media #{$xxs-device}{
+                width: 60px;
+                height: 60px;
+                line-height: 52px;
+                font-size: 24px;
+            }
+        }
+        .count-format {
+            font-size: 18px;
+            padding-top: 10px;
+            // ewsponsive
+            @media #{$xxs-device}{
+                font-size: 14px;
+            }
+        }
+    }
+}
+/*----- coming soon style end -----*/

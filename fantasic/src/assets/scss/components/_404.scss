@@ -1,0 +1,66 @@
+.error-not-found {
+    background-color: $black;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    .error-inner {
+        .image {
+            margin-bottom: 50px;
+            // responsive
+            @media #{$xxs-device}{
+                margin-bottom: 35px;
+            }
+        }
+        .heading-h3 {
+            font-weight: 700;
+            // responsive
+            @media #{$xxs-device}{
+                font-size: 25px;
+            }
+        }
+        .error-text {
+            padding-top: 30px;
+            // responsive
+            @media #{$xxs-device}{
+                padding-top: 25px;
+            }
+            p {
+                font-size: 18px;
+                line-height: 1.9;
+                max-width: 600px;
+                margin: 0 auto;
+                @media #{$xxs-device}{
+                    font-size: 16px;
+                    line-height: 1.6;
+                }
+            }
+        }
+    }
+}
+.error-button-group {
+    margin-top: 30px;
+    .btn-submit {
+        margin-right: 15px;
+        padding: 18px 30px;
+        // responsive
+        @media #{$xxs-device}{
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
+        &.bg-wht {
+            color: #222;
+            background-color: $white;
+            border-bottom: 2px solid #aaa;
+            &:hover {
+                background-color: $theme-color;
+                border-bottom: 2px solid #9a4251;
+            }
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+        &:hover {
+            color: $white;
+        }
+    }
+}

@@ -1,0 +1,130 @@
+/*----- counter up start -----*/
+.fun-fact-area {
+    background-color: #f6f6f6;
+    overflow: hidden;
+    height: 100%;
+
+    @media #{$xxs-device} {
+        height: auto;
+    }
+}
+
+.single-funfact {
+    width: 50%;
+    height: 50%;
+    float: left;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    // responsive
+    @media #{$md-device, $sm-device} {
+        padding: 60px 30px;
+    }
+
+    @media #{$xxs-device} {
+        width: 100%;
+        float: none;
+    }
+}
+
+.funfact-inner {
+    font-size: 32px;
+
+    span {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1;
+        color: $black-soft;
+    }
+
+    p {
+        font-size: 13px;
+        font-weight: 700;
+        padding-top: 8px;
+        color: $black-soft;
+        font-family: $heading-font;
+    }
+}
+
+.funfact-icon {
+    font-size: 36px;
+    color: $black-soft;
+    line-height: 1;
+}
+
+.single-funfact {
+    &:nth-child(1) {
+        border-right: 1px solid #ebebeb;
+        border-bottom: 1px solid #ebebeb;
+
+        @media #{$xs-device} {
+            border-right: none;
+        }
+    }
+
+    &:nth-child(2) {
+        border-bottom: 1px solid #ebebeb;
+
+        @media #{$xs-device} {
+            border-right: none;
+        }
+    }
+
+    &:nth-child(3) {
+        border-right: 1px solid #ebebeb;
+
+        @media #{$xs-device} {
+            border-right: none;
+            border-bottom: 1px solid #ebebeb;
+        }
+    }
+}
+
+/*----- counter up end -----*/
+
+/*------ funfact style two start ------*/
+.single-funfact-two {
+    margin-top: 40px;
+}
+
+.fun-fact-two {
+    background-color: #46A3DA;
+    padding: 75px 0 78px;
+
+    // responsive
+    @media #{$sm-device} {
+        padding: 55px 0 62px;
+    }
+}
+
+.funfact-inner-two {
+    display: flex;
+    justify-content: center;
+
+    .funfact-icon {
+        color: $white;
+        font-size: 60px;
+    }
+
+    .text {
+        text-align: left;
+        padding-left: 20px;
+
+        span {
+            font-size: 30px;
+            font-weight: 700;
+            color: $white;
+        }
+
+        p {
+            color: $white;
+            font-size: 13px;
+            font-weight: 600;
+            line-height: 1;
+        }
+    }
+}
+
+/*------ funfact style two end ------*/

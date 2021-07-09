@@ -1,0 +1,61 @@
+
+/*------- short classes start -------*/
+.section-padding {
+    padding: 112px 0 118px;
+    // responsive
+    @media #{$sm-device} {
+        padding: 62px 0;
+    }
+}
+.section-padding2 {
+    padding: 112px 0 118px;
+    // responsive
+    @media #{$sm-device} {
+        padding: 75px 0;
+    }
+}
+.pt-30 {
+    padding-top: 30px;
+}
+.mb-30 {
+    margin-bottom: 30px;
+}
+.mt-20 {
+    margin-top: 20px;
+}
+.mb-20 {
+    margin-bottom: 20px;
+}
+.mt-30 {
+    margin-top: 30px;
+}
+.mt-40 {
+    margin-top: 40px;
+}
+.mtn-20 {
+    margin-top: -20px;
+}
+.mbn-30 {
+    margin-bottom: -30px;
+}
+.mtn-30 {
+    margin-top: -30px;
+}
+.mtn-40 {
+    margin-top: -40px;
+}
+.ptb-30 {
+    padding: 30px 0;
+}
+.pt-100 {
+    padding-top: 100px;
+    // responsive
+    @media #{$sm-device} {
+        padding-top: 62px;
+    }
+}
+.plr-100 {
+    padding: 0 100px;
+}
+
+/*------- short classes end -------*/

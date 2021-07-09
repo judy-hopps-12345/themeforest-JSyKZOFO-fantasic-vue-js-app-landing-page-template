@@ -1,0 +1,113 @@
+
+.team-member {
+    position: relative;
+    overflow: hidden;
+    &:before {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        content: "";
+        position: absolute;
+        background-color: #24141e;
+        transition: 0.4s;
+        opacity: 0;
+        pointer-events: none;
+    }
+    &:after {
+        background: #24141e;
+        bottom: -135px;
+        content: "";
+        width: 100%;
+        height: 150px;
+        left: -70px;
+        position: absolute;
+        transition: 0.4s;
+        transform: rotate(23deg) scale(1.1);
+        transform-origin: 0 bottom 0;
+        width: 100%;
+        pointer-events: none;
+        opacity: 0;
+    }
+    &:hover {
+        .member-content {
+            left: 30px;
+        }
+        &:before {
+            opacity: 0.6;
+        }
+        &:after {
+            bottom: 0;
+            opacity: 0.6;
+        }
+    }
+}
+.member-content {
+    bottom: 30px;
+    left: 100%;
+    position: absolute;
+    z-index: 1;
+    transition: 0.4s;
+    .title {
+        font-size: 12px;
+        color: $white;
+        line-height: 1;
+        text-transform: uppercase;
+        position: relative;
+    }
+    .designation {
+        font-size: 13px;
+        line-height: 1;
+        padding-top: 10px;
+        text-transform: capitalize;
+    }
+}
+.team-member-inner {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 227px;
+}
+.team-carousel {
+    margin-top: -227px;
+}
+.team-content {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 82px 0;
+    // responsive
+    @media #{$sm-device} {
+        padding: 54px 0;
+    }
+}
+
+/*-------- doctor team start --------*/
+.doctor-member {
+    position: relative;
+    &:hover {
+        .doctor-content {
+            transform: scale(1);
+        }
+    }
+}
+.doctor-content {
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    padding: 30px;
+    position: absolute;
+    background-color: rgba(70, 163, 218, 0.87);
+    transform: scale(0);
+    transform-origin: bottom;
+    transition: 0.4s;
+    .title {
+        color: $white;
+        padding-bottom: 5px;
+    }
+    .designation {
+        color: $white;
+        font-weight: 40;
+    }
+}
+/*-------- doctor team end --------*/

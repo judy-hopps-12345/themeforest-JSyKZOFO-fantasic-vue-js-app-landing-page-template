@@ -1,0 +1,189 @@
+// price area css
+.price {
+    &-area {
+        padding-bottom: 147px;
+        @media #{$sm-device} {
+            padding-top: 75px;
+            padding-bottom: 63px;
+        }
+        .title-style-2 {
+            padding-bottom: 80px;
+            // responsive
+            @media #{$sm-device} {
+                padding-bottom: 35px;
+            }
+        }
+    }
+    &-item {
+        background: $white;
+        border-radius: 10px;
+        text-align: center;
+        margin-top: 30px;
+        &.active {
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+            transform: scale(1.1);
+            // responsive
+            @media #{$sm-device} {
+                transform: scale(1);
+            }
+        }
+    }
+    &-header {
+        background-image: url(../assets/img/bg/price-head.png);
+        -webkit-background-size: cover ;
+        background-size: cover ;
+        border-radius: 10px 10px 0 0;
+        padding: 40px 34px 25px;
+    }
+    &-cost {
+        display: inline-block;
+        margin-bottom: 15px;
+        .icon,
+        .currency,
+        .duration {
+            display: inline-block;
+        }
+        .icon {
+            color: $white;
+            float: left;
+            font-size: 18px;
+            line-height: 1;
+            margin-top: 8px;
+            margin-right: 3px;
+        }
+        .currency {
+            color: $white;
+            font-size: 48px;
+            line-height: 1;
+            font-weight: 900;
+        }
+        .duration {
+            color: $white;
+            font-size: 14px;
+            line-height: 1;
+            font-family: $heading-font;
+        }
+    }
+    &-plan {
+        color: $white;
+        font-size: 14px;
+        font-weight: 900;
+        line-height: 1;
+    }
+    &-content {
+        padding: 35px 55px;
+        // responsive
+        @media #{$lg-device} {
+            padding: 35px 20px;
+        }
+        @media #{$md-device, $xxs-device} {
+            padding: 35px 0;
+        }
+        li {
+            font-size: 14px;
+            padding: 8px 0;
+            color: $black-soft;
+            text-transform: capitalize;
+        }
+    }
+    &-footer {
+        padding-bottom: 35px;
+    }
+}
+.price-item {
+    &:first-child {
+        margin-right: 30px;
+        // responsive
+        @media #{$lg-device} {
+            margin-right: 15px;
+        }
+        @media #{$md-device, $xxs-device} {
+            margin-right: 0;
+        }
+    }
+    &:last-child {
+        margin-left: 30px;
+        // responsive
+        @media #{$lg-device} {
+            margin-left: 15px;
+        }
+        @media #{$md-device, $xxs-device} {
+            margin-left: 0;
+        }
+    }
+}
+
+.price-item.active .footer .button:hover {
+    background: #2D3E50;
+    border-color: #2D3E50 #2D3E50 #1f2c3b;
+}
+
+// price style 2
+.price-two {
+    padding-bottom: 145px;
+    // responsive
+    @media #{$sm-device} {
+        padding-bottom: 62px;
+    }
+}
+.price-item {
+    &__style-2 {
+        .price-header {
+            background-image: url(../assets/img/bg/price-head2.png);
+        }
+        .round-gradient {
+            color: $black-soft;
+            &:hover,
+            &.active {
+                color: $white;
+            }
+        }
+    }
+    &--hosting {
+        border: 1px solid #e8e8e8;
+        margin-top: 60px;
+        transition: 0.4s;
+        .price-header {
+            position: relative;
+            border: none;
+            padding: 40px 0 15px;
+            background-image: url(../assets/img/hosting/price-head.jpg);
+            transition: 0.4s;
+            .price-plan {
+                padding: 20px 0;
+            }
+            .price-cost {
+                margin-bottom: 0;
+            }
+        }
+        .price-icon {
+            background: #2e3138;
+            border: 3px solid #f3f3f3;
+            border-radius: 50%;
+            color: #ff6c3a;
+            display: inline-block;
+            height: 70px;
+            left: 50%;
+            top: 0;
+            line-height: 64px;
+            position: absolute;
+            width: 70px;
+            z-index: 11;
+            font-size: 30px;
+            transform: translate(-50%, -50%);
+            transition: 0.4s;
+        }
+        &:hover,
+        &.active {
+            transform: scale(1);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+            .price-header {
+                background-image: url(../assets/img/hosting/price-head-active.jpg);
+            }
+            .price-icon {
+                background-color: $theme-color-8;
+                color: $white;
+            }
+        }
+    }
+}

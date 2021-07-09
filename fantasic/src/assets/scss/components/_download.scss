@@ -1,0 +1,123 @@
+.download-area {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../assets/img/clients-bg.jpg);
+    padding-bottom: 130px;
+
+    // responsive
+    @media #{$sm-device} {
+        padding-bottom: 63px;
+    }
+}
+
+.downloadTwo {
+    padding-bottom: 114px;
+
+    // responsive
+    @media #{$sm-device} {
+        padding-top: 75px;
+        padding-bottom: 63px;
+    }
+
+    .button-set {
+
+        // responsive
+        @media #{$sm-device} {
+            margin-top: 30px;
+        }
+    }
+}
+
+// download style 3
+.download-style-3 {
+    background-color: #252525 !important;
+    background-image: none !important;
+}
+
+// download style 04
+.download-content {
+    max-width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 75px;
+
+    // responsive
+    @media #{$md-device, $sm-device} {
+        max-width: 100%;
+        padding-bottom: 50px;
+    }
+
+    p {
+        color: #bbb;
+    }
+}
+
+.button-set {
+    &__download {
+        margin-top: -20px;
+
+        .read-more {
+            margin-top: 20px;
+            margin-right: 15px;
+
+            // responsive
+            @media #{$xxs-device} {
+                margin-right: 0;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+/*----- download wrapper five start -----*/
+.download-wrapper-five {
+
+    // responsive
+    @media #{$md-device} {
+        padding-bottom: 32px;
+    }
+
+    .title {
+        color: $white;
+
+        &:before {
+            background-color: $white;
+        }
+    }
+
+    p {
+        color: $white;
+    }
+
+    .button-set {
+        margin-top: 58px;
+
+        .btn {
+            margin-right: 15px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+.app-thumb {
+    text-align: right;
+    padding-top: 30px;
+
+    // responsive
+    @media #{$md-device, $sm-device} {
+        text-align: center;
+    }
+
+    @media #{$sm-device} {
+        padding-top: 0;
+    }
+}
+
+/*----- download wrapper five end -----*/

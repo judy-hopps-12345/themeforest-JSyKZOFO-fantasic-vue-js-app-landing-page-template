@@ -1,0 +1,141 @@
+
+/*------ service area start ------*/
+.service-item {
+    h6 {
+        font-size: 14px;
+        font-weight: 700;
+    }
+    p {
+        color: $paragraph-light;
+        font-size: 14px;
+    }
+}
+.service-item-inner {
+    .service-item {
+        display: flex;
+        align-items: center;
+        padding-bottom: 90px;
+        // responsive
+        @media #{$lg-device} {
+            padding-bottom: 40px;
+        }
+        // responsive
+        @media #{$sm-device} {
+            flex-direction: row;
+            padding-bottom: 0;
+            margin-bottom: 30px;
+        }
+        &:last-child {
+            padding-bottom: 0;
+            .service-icon {
+                &:after {
+                    display: none;
+                }
+            }
+        }
+        .service-icon {
+            width: 90px;
+            height: 90px;
+            position: relative;
+            &:after {
+                top: 100%;
+                left: 50%;
+                width: 1px;
+                height: 85px;
+                content: '';
+                position: absolute;
+                background-color: #ebebeb;
+                // responsive
+                @media #{$sm-device} {
+                    display: none;
+                }
+            }
+        }
+        .service-content {
+            width: calc(100% - 90px);
+            // responsive
+            @media #{$sm-device} {
+                width: calc(100% - 60px);
+            }
+            h6 {
+                padding-top: 0;
+                padding-bottom: 10px;
+            }
+        }
+        &__left {
+            flex-direction: row-reverse;
+            text-align: right;
+            // responsive
+            @media #{$sm-device}{
+                text-align: left;
+                flex-direction: row;
+            }
+            .service-icon {
+                margin-left: 20px;
+                // responsive
+                @media #{$sm-device}{
+                    margin-left: 0;
+                    margin-right: 20px;
+                }
+            }
+        }
+        &__right {
+            .service-icon {
+                margin-right: 20px;
+                // responsive
+                @media #{$sm-device}{
+                    margin-left: 0;
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+}
+.service-middle-thumb {
+    // responsive
+    @media #{$md-device, $sm-device} {
+        text-align: center;
+        margin-top: 30px;
+    }
+}
+
+
+/*------ service provide section start ------*/
+.service-provide-area {
+    // responsive
+    @media #{$md-device}{
+        margin-top: 56px;
+    }
+    @media #{$sm-device}{
+        margin-top: 60px;
+    }
+}
+.service-provide {
+    &-wrapper {
+        margin-top: -30px;
+    }
+    &-item {
+        width: 50%;
+        float: left;
+        padding: 0 20px;
+        text-align: center;
+        margin-top: 30px;
+        // responsive
+        @media #{$xs-device}{
+            width: 100%;
+        }
+    }
+    &-content {
+        margin-top: 20px;
+        h6 {
+            font-size: 13px;
+            font-weight: 700;
+            padding-bottom: 15px;
+        }
+        p {
+            color: $paragraph-light;
+            font-size: 13px;
+        }
+    }
+}
+/*------ service provide section end ------*/

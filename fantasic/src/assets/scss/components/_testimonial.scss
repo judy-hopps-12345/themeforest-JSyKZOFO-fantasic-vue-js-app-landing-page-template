@@ -1,0 +1,151 @@
+// testimonial style start
+.testimonial-area {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 170px;
+
+    // responsive
+    @media #{$sm-device} {
+        padding-top: 62px;
+        padding-bottom: 112px;
+    }
+}
+
+.testimonial {
+    &-item {
+        text-align: center;
+    }
+
+    &-thumb {
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    &-content {
+        max-width: 750px;
+        margin: 0 auto;
+    }
+}
+
+.client {
+    font-size: 12px;
+    font-weight: 700;
+    color: $white;
+    padding: 27px 0 50px;
+
+    span {
+        font-weight: 500;
+    }
+
+    @media #{$sm-device} {
+        padding: 27px 0 30px;
+    }
+}
+
+// testimonial style 2
+.testimonial-style-2 {
+    @media #{$sm-device} {
+        padding-top: 55px;
+    }
+}
+
+.testimonial {
+    &-style2 {
+        .testimonial-thumb {
+            margin-top: 30px;
+        }
+
+        .client {
+            padding-bottom: 0;
+        }
+    }
+}
+
+.testimonial-area-four {
+    background: linear-gradient(to bottom, #252525 50%, #f9f9f9 50%);
+}
+
+.testimonial-active-four {
+    background-color: $white;
+    position: relative;
+    padding: 50px 15px;
+
+    // responsive
+    @media #{$md-device, $sm-device} {
+        padding: 20px 15px;
+    }
+
+    .testimonial-item {
+        border-right: 1px solid $bdr-color;
+        padding: 30px;
+
+        // responsive
+        @media #{$sm-device} {
+            border-right: none;
+        }
+    }
+
+    .testimonial-content {
+        .client {
+            color: $black-soft;
+            padding-bottom: 30px;
+
+            // responsive
+            @media #{$md-device, $sm-device} {
+                padding: 20px 15px;
+            }
+        }
+
+        p {
+            color: $black-soft;
+            font-weight: 300;
+            font-style: italic;
+        }
+    }
+
+    &:after {
+        top: 100%;
+        left: 0;
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 60px;
+        background: url("../assets/img/clients-shadow.png") no-repeat scroll center 100%;
+    }
+
+    .owl-item {
+        &.active {
+            &:last-child {
+                .testimonial-item {
+                    border-right: none;
+                }
+            }
+        }
+    }
+}
+
+// testimonial style five
+.testimonial-five {
+    background-image: url("../assets/img/home-medical/testimonial-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .title-style-4 {
+        .title {
+            color: $white;
+
+            &:before {
+                background-color: $white;
+            }
+        }
+
+        p {
+            color: $white;
+        }
+    }
+}

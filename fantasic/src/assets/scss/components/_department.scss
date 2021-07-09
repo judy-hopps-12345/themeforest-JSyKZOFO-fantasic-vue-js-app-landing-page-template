@@ -1,0 +1,102 @@
+
+/*------ accordion style start ------*/
+.department-area {
+    background-attachment: fixed;
+    // responsive
+    @media #{$md-device, $sm-device}{
+        background-position: inherit;
+    }
+}
+.department-faq {
+    .card-header {
+        border-radius: 0;
+        padding: 0;
+        border-bottom: none;
+        background-color: $theme-color-7;
+        position: relative;
+        .btn-info {
+            padding: 8px;
+            text-align: left;
+            border-radius: 0;
+            text-transform: uppercase;
+            span {
+                padding-right: 10px;
+            }
+            &:hover {
+                background-color: $theme-color-7;
+            }
+        }
+    }
+    .card-body {
+        border-radius: 0;
+        display: flex;
+        // responsive
+        @media #{$xxs-device}{
+            display: block;
+        }
+    }
+    .dep-thumb {
+        width: 130px;
+        align-self: flex-start;
+        // responsive
+        @media #{$xxs-device}{
+            width: 100%;
+        }
+    }
+    .card-text {
+        color: $paragraph-light;
+        font-size: 14px;
+        padding-left: 20px;
+        width: calc(100% - 130px);
+         // responsive
+         @media #{$xxs-device}{
+            width: 100%;
+            padding-left: 0;
+            margin-top: 20px;
+        }
+        h6 {
+            font-weight: 700;
+            padding-bottom: 5px;
+            a {
+                color: $black-soft;
+                &:hover {
+                    color: $theme-color-7;
+                }
+            }
+        }
+        .learn-more {
+            font-size: 13px;
+            color: $theme-color-7;
+            padding-top: 10px;
+            display: block;
+        }
+    }
+}
+.card {
+    border-radius: 0;
+    border: none;
+}
+[aria-expanded="false"] {
+    background-color: $theme-color-7;
+}
+.department-faq {
+    .card-header {
+        [aria-expanded="false"],
+        [aria-expanded="true"] {
+            &:before {
+                top: 50%;
+                right: 20px;
+                content: "\f107";
+                position: absolute;
+                font-family: $font-awesome;
+                transform: translateY(-50%);
+            }
+        }
+        [aria-expanded="true"] {
+            &:before {
+                content: "\f106";
+            }
+        }
+    }
+}
+/*------ accordion style end ------*/

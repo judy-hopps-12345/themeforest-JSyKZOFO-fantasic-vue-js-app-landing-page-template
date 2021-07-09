@@ -1,0 +1,230 @@
+.about {
+    &-area {
+        padding-top: 120px;
+
+        // responsive
+        @media #{$md-device} {
+            padding-bottom: 112px;
+        }
+
+        @media #{$sm-device} {
+            padding-top: 62px;
+            margin-bottom: -5px;
+        }
+    }
+
+    &-item {
+        margin-top: 30px;
+        text-align: center;
+
+        // responsive
+        @media #{$sm-device} {
+            padding: 0 80px;
+        }
+
+        @media #{$xs-device} {
+            padding: 0 50px;
+        }
+
+        @media #{$xxs-device} {
+            padding: 0;
+        }
+
+        &:hover {
+            .about-icon {
+                color: $white;
+                background-color: $theme-color;
+
+                &:before {
+                    transform: scale(0.8);
+                    border-color: $white;
+                }
+            }
+        }
+    }
+
+    &-icon {
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        margin: 0 auto;
+        border-radius: 50%;
+        font-size: 35px;
+        position: relative;
+        color: $theme-color;
+        transition: 0.4s;
+
+        // responsive
+        @media #{$sm-device} {
+            width: 80px;
+            height: 80px;
+            line-height: 80px;
+        }
+
+        &:before {
+            top: 0;
+            left: 0;
+            border: 2px solid $theme-color;
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            transition: 0.4s;
+            display: block;
+            transform: scale(1);
+
+            // responsive
+            @media #{$sm-device} {
+                width: 80px;
+                height: 80px;
+            }
+        }
+    }
+
+    &-content {
+        h6 {
+            font-size: 13px;
+            font-weight: 800;
+            text-transform: uppercase;
+            padding: 22px 0 18px;
+        }
+
+        p {
+            font-size: 13px;
+            color: $paragraph-light;
+        }
+    }
+}
+
+// about style 2
+.about-style-2 {
+    .about-item {
+        &:hover {
+            .about-icon {
+                background-color: $theme-color-3;
+            }
+        }
+    }
+
+    .about-icon {
+        color: $theme-color-4;
+
+        &:before {
+            border-color: $theme-color-4;
+        }
+    }
+}
+
+// about style 3
+.about-style-3 {
+    .about-item {
+        &:hover {
+            .about-icon {
+                background-color: $theme-color-5;
+            }
+        }
+    }
+
+    .about-icon {
+        color: #949494;
+
+        &:before {
+            border-color: #D5D5D5;
+        }
+    }
+}
+
+// about style 4 start
+.about-two-area {
+
+    // responsive
+    @media #{$sm-device} {
+        padding-bottom: 56px;
+    }
+}
+
+.about-item-two {
+    display: flex;
+    margin-top: 30px;
+
+    // responsive
+    @media #{$sm-device} {
+        display: block;
+        text-align: center;
+        padding: 0 30px;
+    }
+
+    @media #{$xxs-device} {
+        padding: 0;
+    }
+
+    .about-icon {
+        font-size: 30px;
+        width: inherit;
+        height: inherit;
+        line-height: 1;
+        color: $theme-color-6;
+
+        &:before {
+            display: none;
+        }
+
+        // responsive
+        @media #{$sm-device} {
+            padding-bottom: 20px;
+        }
+    }
+
+    .about-content {
+        padding-left: 15px;
+
+        // responsive
+        @media #{$sm-device} {
+            padding-left: 0;
+        }
+
+        h6 {
+            padding-top: 0;
+
+            // responsive
+            @media #{$sm-device} {
+                padding-bottom: 10px;
+            }
+        }
+    }
+}
+
+
+// about app section start
+.about-app-content {
+    padding: 0 80px;
+
+    // responsive
+    @media #{$lg-device} {
+        padding: 0 25px;
+    }
+
+    @media #{$sm-device} {
+        padding: 0 50px;
+    }
+
+    @media #{$xxs-device} {
+        padding: 0 15px;
+    }
+
+    p {
+        color: #8f8f8f;
+        font-size: 14px;
+        padding-bottom: 73px;
+
+        // responsive
+        @media #{$lg-device} {
+            padding-bottom: 50px;
+        }
+
+        @media #{$sm-device} {
+            padding-bottom: 45px;
+        }
+    }
+}

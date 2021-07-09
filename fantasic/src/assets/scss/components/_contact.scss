@@ -1,0 +1,153 @@
+/*-------- contact section start --------*/
+.contact-area {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    .contact-style-2,
+    .contact-style-3 {
+        padding-top: 0;
+    }
+}
+.support-form {
+    .input-box {
+        margin-bottom: 20px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        .text-field {
+            width: 100%;
+            font-size: 14px;
+            color: $paragraph-light;
+            padding: 17px 22px;
+            line-height: 1.5;
+            background-color: #f5f4f4;
+        }
+        textarea {
+            height: 130px;
+        }
+    }
+}
+.support-container {
+    background-color: $white;
+    padding: 80px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    // responsive
+    @media #{$md-device} {
+        padding: 30px;
+    }
+    @media #{$sm-device} {
+        padding: 30px 0;
+    }
+    .btn-submit {
+        @media #{$xs-device} {
+            width: 100%;
+        }
+    }
+}
+.support-info {
+    background-color: #f5f4f4;
+    padding: 18px 23px;
+    @media #{$sm-device} {
+        margin-top: 62px;
+    }
+    .single-info {
+        margin-bottom: 32px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        .icon {
+            width: 75px;
+            height: 75px;
+            line-height: 75px;
+            border: 2px solid $theme-color;
+            color: $theme-color;
+            text-align: center;
+            font-size: 24px;
+            border-radius: 50%;
+            margin: 0 auto;
+        }
+        .support-title {
+            font-size: 13px;
+            font-weight: 800;
+            line-height: 1;
+            padding: 18px 0 10px;
+            text-transform: uppercase;
+        }
+        p {
+            font-size: 13px;
+            color: $paragraph-light;
+        }
+    }
+}
+/*-------- contact section end --------*/
+
+// contact style 2
+.contact-style-2,
+.contact-style-3 { 
+    padding-top: 112px;
+    @media #{$sm-device} {
+        padding-top: 74px;
+    }
+    .single-info {
+        .icon {
+            color: $theme-color-3;
+            border-color: $theme-color-3;
+        }
+    }
+    .btn-submit {
+        background-color: $theme-color-3;
+        border-color: #E8AF36 #E8AF36 #BB8112;
+        &:hover {
+            background-color: $theme-color-4;
+            border-color: #2D3E50 #2D3E50 #1f2c3b;
+        }
+    }
+    .title-icon {
+        display: none;
+    }
+    .title-style-2 {
+        text-align: left !important;
+        &:after {
+            display: block !important;
+        }
+    }
+    
+}
+.contact-style-3 {
+    .single-info {
+        .icon {
+            color: $theme-color-5;
+            border-color: $theme-color-5;
+        }
+    }
+    .btn-submit {
+        background-color: $theme-color-5;
+        border-color: #35A6E1 #35A6E1 #1D7CAE;
+        &:hover {
+            background-color: $theme-color-4;
+            border-color: #2D3E50 #2D3E50 #1f2c3b;
+        }
+    }
+}
+.contact-area {
+    .title-style-2 {
+        &:after {
+            display: none;
+        }
+    }
+}
+
+.contact-style-4 {
+    .round-gradient {
+        color: $black-soft;
+        &:hover {
+            color: $white;
+        }
+    }
+    .single-info {
+        .icon {
+            color: $theme-color-6;
+            border-color: $theme-color-6;
+        }
+    }
+}

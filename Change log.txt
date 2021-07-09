@@ -1,0 +1,6 @@
+Version: 1.1.9 ----------Date: 03-07-2021
+=========================================
+1. Bootstrap-vue plugin update
+2. scroll behavior issue fix
+
+
